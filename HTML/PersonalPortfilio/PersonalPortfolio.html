@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <meta name="Description" content=" Personal Portfolio For Abdallah Awwad">
+    <title>Portfolio</title>
+    <style>
+        .field-row {
+            display: flex;
+            gap: 8px;
+            margin-top: 12px;
+        }
+        textarea {
+            resize: none;
+        }
+        .icon-stack {
+            position: relative;
+            width: 50px;
+            height: 50px;
+        }
+        .icon-stack .icon-base {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 70px;
+            color: #000000;
+        }
+        .icon-stack .icon-overlay {
+            position: absolute;
+            top: 19px;
+            left: 21px;
+            font-size: 35px;
+            color:#000000 ;
+        }
+        table {
+            border-collapse: collapse;
+            border: none;
+        }
+        td,
+        th {
+            border: 2px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        table tr:first-child th {
+            border-top: none;
+        }
+        table tr:last-child td {
+            border-bottom: none;
+        }
+        table tr td:first-child,
+        table tr th:first-child {
+            border-left: none;
+        }
+        table tr td:last-child,
+        table tr th:last-child {
+            border-right: none;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1><strong>Abdallah Awwad</strong></h1>
+        <img src="/me.jpg" alt="My Image" width="140" height="120">
+        <br>
+        <div>
+            <i class="fa-brands fa-github" style="font-size: 25px;"></i>
+            <a href="https://github.com/0-Abdallah-Awwad-0">my github</a>
+            <i class="fa-brands fa-linkedin" style="font-size: 25px;"></i>
+            <a href="https://www.linkedin.com/">my linkedin</a>
+            <i class="fa-solid fa-envelope" style="font-size: 25px;"></i>
+            <a href="https://workspace.google.com/intl/en/gmail/">my email</a>
+        </div>
+        <br>
+        <h2 style="margin-bottom:2px;">Technologies</h2>
+        <table>
+            <tr>
+                <th>Front-End</th>
+                <th>Python</th>
+                <th>Java Script</th>
+                <th>Database</th>
+                <th>Concepts</th>
+            </tr>
+            <tr>
+                <td>HTML5</td>
+                <td>Djanogo</td>
+                <td>Express</td>
+                <td>MySQL</td>
+                <td>AJAX</td>
+            </tr>
+            <tr>
+                <td>CSS3</td>
+                <td>Flask</td>
+                <td>Mongoose</td>
+                <td>MongoDB</td>
+                <td>OOP</td>
+            </tr>
+            <tr>
+                <td>Bootstrap</td>
+                <td>Unittest</td>
+                <td>React</td>
+                <td></td>
+                <td>REST</td>
+            </tr>
+        </table>
+        <h3 style="margin-bottom:2px;">Social Snakes</h3>
+        <div class="icon-stack">
+            <i class="fa-regular fa-square icon-base"></i>
+            <i class="fa-solid fa-code icon-overlay"></i>
+        </div>
+        <p>Social Media App made in Python - <a href="https://www.python.org/">code</a> | <a href="https://www.codegenes.net/blog/how-to-deploy-python-application/">deployed</a></p>
+        <h4>Contact Me</h4>
+        <label>Name:</label>
+        <input type="text">
+        <label>Email:</label>
+        <input type="text">
+
+        <div class="field-row">
+            <label>Message:</label>
+            <textarea name="Place for text"></textarea>
+        </div>
+        <br>
+        <input type="submit" style="margin-left: 10px;" value="Send Message">
+    </form>
+</body>
+</html>
