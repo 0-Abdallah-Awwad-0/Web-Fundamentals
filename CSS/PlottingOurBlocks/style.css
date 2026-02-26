@@ -15,7 +15,7 @@
   display: inline-block;
   vertical-align: top;
   width: 200px;
-  height: 400px;
+  height: 300px; 
   background-color: blue;
 }
 
@@ -23,7 +23,7 @@
   display: inline-block;
   vertical-align: top;
   width: 700px;
-  height: 450px;
+  height: 400px;
   background-color: red;
   margin-left: 15px;
   padding: 15px;
