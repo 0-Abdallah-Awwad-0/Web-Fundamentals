@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 720px;
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  width: 620px;
+  height: 240px;
+  border: 2px solid #cfcfcf;
+  box-shadow: rgba(150, 6, 6, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.head {
+  background-color: rgb(150, 15, 15);
+}
+
+.card-photo img {
+    width: 65px;
+  height: 70px;
+  border-radius: 70%;
+  border: 3px solid #ffffff;
+  margin: 25px 25px -25px;
+}
+
+.profile-content {
+  padding: 20px;
+}
+
+.profile-content h2 {
+  margin: 0;
+  color: #0a0a0a;
+  font-family: cursive;
+}
+
+.profile-content p {
+  margin: 5px 0;
+  color:#232323;
+}
+
+.profile-content img {
+  width: 10px;
+  height: 15px;
+  margin-right: 2px;
+}
+
+.profile-content a{
+  margin-left: 5px;
+}
+
+.profile-content a:hover {
+  color: #085394;
+}
