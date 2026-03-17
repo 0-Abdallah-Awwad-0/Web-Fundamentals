@@ -1,7 +1,7 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-
+/*add padding to sinng out and profile */
 .nav {
   display: flex;
   height: 55px;

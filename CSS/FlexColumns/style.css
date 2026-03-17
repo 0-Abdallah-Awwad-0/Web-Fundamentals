@@ -1,7 +1,6 @@
 .row {
    display: flex;
    margin-bottom: 12px;
-
 }
 
 .col,.col-2,.col-3 {
