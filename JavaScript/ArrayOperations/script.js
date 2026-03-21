@@ -37,10 +37,8 @@ if (targetPosition !== -1) {
   console.log("Not Found");
 }
 //-----------------------------------------------------------
-
 //4-sorting an Array
 let scores = [50, 20, 70, 10, 40];
-
 // a. Ascending order (Needs a comparison function for numbers)
 scores.sort((a, b) => a - b);
 console.log("Ascending:", scores);
