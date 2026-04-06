@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="form-container">
+        <h2>Job Application Form</h2>
+
+        <form action="#" method="POST">
+
+            <div class="form-group">
+                <label for="fullName" class="required">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="emailAddress" class="required">Email Address:</label>
+                <input type="email" id="emailAddress" name="emailAddress" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phoneNumber" class="required">Phone Number:</label>
+                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            </div>
+
+            <div class="form-group">
+                <label for="experience">Years of Experience:</label>
+                <input type="number" id="experience" name="experience" min="0" max="30"
+                    placeholder="Enter a number between 0 and 30"
+                    title="Please enter a valid number of years between 0 and 30.">
+            </div>
+
+            <fieldset>
+                <legend>Preferred Work Type</legend>
+                <div class="radio-group">
+                    <div>
+                        <input type="radio" id="remote" name="workType" value="remote" required>
+                        <label for="remote">Remote</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="onsite" name="workType" value="onsite">
+                        <label for="onsite">On-site</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="hybrid" name="workType" value="hybrid">
+                        <label for="hybrid">Hybrid</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="cvUpload" class="required">Upload CV (PDF only):</label>
+                <input type="file" id="cvUpload" name="cvUpload" accept=".pdf" required
+                    title="Please upload your resume in PDF format only.">
+            </div>
+
+            <div class="form-group">
+                <label for="appId">Application ID (auto-generated):</label>
+                <input type="text" id="appId" name="appId" value="APP-2026-00123" readonly
+                    title="This ID is automatically generated and cannot be changed.">
+            </div>
+
+            <div class="form-group">
+                <label for="coverLetter">Cover Letter:</label>
+                <textarea id="coverLetter" name="coverLetter" rows="4"
+                    title="Briefly explain why you are a great fit for this role."></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="salary">Salary Expectation (Annually): $<span id="salaryOutput"
+                        class="salary-display">60000</span></label>
+                <input type="range" id="salary" name="salary" min="30000" max="150000" step="5000" value="60000"
+                    oninput="document.getElementById('salaryOutput').innerText = this.value" style="width: 100%;">
+            </div>
+
+            <div class="form-group">
+                <label for="startDate">Available Start Date:</label>
+                <input type="date" id="startDate" name="startDate" min="2026-04-07"
+                    title="Select a date in the future.">
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn-submit">Submit Application</button>
+                <button type="reset" class="btn-reset">Reset Form</button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
