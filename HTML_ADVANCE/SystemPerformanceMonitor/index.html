@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>System Performance Monitor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="monitor-container">
+        <h1>System Performance Monitor</h1>
+
+        <div class="grid-layout">
+
+            <div class="card">
+                <h3>🔥 CPU Usage</h3>
+                <meter value="0.65" min="0" max="1" low="0.3" high="0.8" optimum="0.2"></meter>
+                <span class="status-text">65% usage</span>
+            </div>
+
+            <div class="card">
+                <h3>💾 RAM Usage</h3>
+                <meter value="6" min="0" max="16"></meter>
+                <span class="status-text">6 GB of 16 GB used</span>
+            </div>
+
+            <div class="card">
+                <h3>💽 Disk Usage</h3>
+                <meter value="420" min="0" max="512" high="400"></meter>
+                <span class="status-text">420 GB of 512 GB used</span>
+            </div>
+
+            <div class="card">
+                <h3>📂 File Transfer</h3>
+                <progress value="70" max="100"></progress>
+                <span class="status-text">70% completed</span>
+            </div>
+
+            <div class="card">
+                <h3>🌐 Network Activity</h3>
+                <progress value="30" max="100"></progress>
+                <span class="status-text">Current load: 30%</span>
+            </div>
+
+            <div class="card">
+                <h3>⚡ System Tasks</h3>
+                <progress value="45" max="100"></progress>
+                <span class="status-text">Processing tasks: 45%</span>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

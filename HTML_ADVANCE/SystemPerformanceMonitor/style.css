@@ -1,0 +1,50 @@
+body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9effb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .monitor-container {
+            background-color: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+            width: 900px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c5bc4;
+            margin-bottom: 40px;
+        }
+        .grid-layout {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+        .card {
+            background-color: #f8faff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+        .card h3 {
+            margin-top: 0;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .status-text {
+            display: block;
+            margin-top: 10px;
+            font-size: 0.85rem;
+            color: #666;
+        }
+        /* Styling the meters and progress bars */
+        meter, progress {
+            width: 100%;
+            height: 12px;
+        }
