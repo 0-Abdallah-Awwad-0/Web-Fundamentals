@@ -2,34 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SVG House Structure</title>
+    <title>Cozy Home Illustration</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <svg width="500" height="400" xmlns="http://www.w3.org/2000/svg">
-        
-        <rect width="500" height="300" fill="#f0f8ff" />
+    <svg width="520" height="420" xmlns="http://www.w3.org/2000/svg">
 
-        <line x1="0" y1="300" x2="500" y2="300" stroke="green" stroke-width="10" />
+        <!-- Sky -->
+        <rect width="520" height="300" fill="#cfe8ff" />
 
-        <circle cx="400" cy="80" r="40" fill="yellow" stroke="orange" stroke-width="2" />
+        <!-- Ground -->
+        <rect y="300" width="520" height="120" fill="#7ec850" />
 
-        <rect x="130" y="110" width="30" height="60" fill="#7d4a25" stroke="black" />
+        <!-- Sun -->
+        <circle cx="430" cy="80" r="35" fill="#ffd54d" />
 
-        <rect x="100" y="170" width="250" height="130" fill="#f4c57a" stroke="black" stroke-width="2" />
+        <!-- House Base -->
+        <rect x="140" y="180" width="240" height="140" fill="#ffcc80" stroke="#333" stroke-width="2" />
 
-        <polygon points="75,170 375,170 225,70" fill="#d33f3f" stroke="black" stroke-width="2" />
+        <!-- Roof -->
+        <polygon points="120,180 400,180 260,80" fill="#e57373" stroke="#333" stroke-width="2" />
 
-        <rect x="130" y="200" width="50" height="50" fill="lightblue" stroke="black" stroke-width="2" />
+        <!-- Door -->
+        <rect x="250" y="240" width="50" height="80" fill="#6d4c41" stroke="#222" />
+        <circle cx="290" cy="280" r="4" fill="gold" />
 
-        <rect x="210" y="230" width="50" height="70" fill="#7d4a25" stroke="black" stroke-width="2" />
+        <!-- Windows -->
+        <rect x="170" y="210" width="50" height="50" fill="#bbdefb" stroke="#333" />
+        <rect x="320" y="210" width="50" height="50" fill="#bbdefb" stroke="#333" />
 
-        <g fill="white" opacity="0.8">
-            <circle cx="50" cy="50" r="20" />
-            <circle cx="75" cy="50" r="25" />
-            <circle cx="100" cy="50" r="20" />
+        <!-- Window lines -->
+        <line x1="195" y1="210" x2="195" y2="260" stroke="#333" />
+        <line x1="170" y1="235" x2="220" y2="235" stroke="#333" />
+
+        <line x1="345" y1="210" x2="345" y2="260" stroke="#333" />
+        <line x1="320" y1="235" x2="370" y2="235" stroke="#333" />
+
+        <!-- Chimney -->
+        <rect x="300" y="110" width="25" height="60" fill="#5d4037" />
+
+        <!-- Smoke -->
+        <g fill="white" opacity="0.7">
+            <circle cx="315" cy="90" r="10"/>
+            <circle cx="330" cy="75" r="12"/>
+            <circle cx="345" cy="60" r="10"/>
         </g>
+
+        <!-- Tree -->
+        <rect x="60" y="240" width="20" height="60" fill="#6d4c41" />
+        <circle cx="70" cy="220" r="30" fill="#4caf50" />
 
     </svg>
 

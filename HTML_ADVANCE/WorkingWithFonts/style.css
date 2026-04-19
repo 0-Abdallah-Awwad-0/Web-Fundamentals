@@ -1,0 +1,54 @@
+/* 1. Web-safe font stack for h1 */
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 2. Custom font 1 */
+@font-face {
+  font-family: "MyCustomFont";
+  src: url("MyFont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* 3. Custom font 2 */
+@font-face {
+  font-family: "Sekuya";
+  src: url("Sekuya-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use one h2 style only (choose ONE font or combine if needed) */
+h2 {
+  font-family: "MyCustomFont", Arial, sans-serif;
+}
+
+/* If you want a second styled heading instead, use a class */
+.h2-alt {
+  font-family: "Sekuya", Arial, sans-serif;
+}
+
+/* Google Font (Roboto) */
+.google-font {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+/* Bonus Google Font (Lobster) */
+.google-font-alt {
+  font-family: "Lobster", cursive;
+  font-size: 18px;
+}
+
+/* Bonus styling */
+.bold-text {
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Monospace text */
+.mono-text {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 12px;
+}

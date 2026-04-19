@@ -48,6 +48,7 @@ body {
 
 /* Sidebar */
 .sidebar {
+  /* flex: 1; */
   background-color: white;
   width: 250px;
   border-radius: 12px;
@@ -90,7 +91,7 @@ body {
 
 /* Main Content Area */
 .content {
-  flex: 1;
+  /* flex: 2;should be edited it to be doubled  */
   display: flex;
   flex-direction: column;
   gap: 20px;

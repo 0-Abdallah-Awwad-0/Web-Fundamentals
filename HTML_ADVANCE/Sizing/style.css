@@ -1,95 +1,77 @@
-/* =========================================
-   STARTER CSS
-   ========================================= */
+/* Base Styling */
 body {
     margin: 0;
     padding: 30px;
     font-family: "Poppins", sans-serif;
-    background: linear-gradient(135deg, #c3d9ff, #fce4ff);
+    background: linear-gradient(120deg, #dfe9f3, #ffffff);
 }
 
-/* Page Title */
 h1 {
     text-align: center;
-    color: #3a1d71;
-    font-size: clamp(26px, 5vw, 56px);
-    margin-bottom: 40px;
+    color: #2c3e50;
+    font-size: clamp(28px, 5vw, 52px);
+    margin-bottom: 35px;
 }
 
-/* Responsive Card Style */
+/* Cards */
 .card {
-    background: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(10px);
-    border-radius: 18px;
-    padding: 25px;
-    max-width: 700px;
-    margin: 25px auto;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-    overflow: hidden; /* Helps contain the calc-box if it overflows */
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    padding: 20px;
+    max-width: 680px;
+    margin: 20px auto;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
 }
 
 .section-title {
-    font-size: 20px;
     font-weight: bold;
-    color: #32145c;
     margin-bottom: 10px;
+    color: #34495e;
 }
 
-/* =========================================
-   NEW CSS FOR CARDS 1 TO 5
-   ========================================= */
-
-/* 1. Shrinking Image */
-.shrinking-img {
-    width: 100%;          /* Shrinks based on the container */
-    max-width: 400px;     /* Cannot grow larger than this limit */
-    height: auto;
+/* 1. Image */
+.img-flex {
+    width: 100%;
+    max-width: 380px;
     border-radius: 10px;
+    display: block;
+    margin: auto;
 }
 
-/* 2. Button That Never Becomes Too Small */
-.min-width-btn {
-    width: 40%;           /* Will attempt to be 40% of the parent */
-    min-width: 150px;     /* Will never shrink below 150px on narrow screens */
-    padding: 1rem 2rem;   /* Using rem units for padding */
-    font-size: 1.1rem;    /* Using rem units for font sizing */
-    background-color: #3a1d71;
+/* 2. Button */
+.btn-smart {
+    width: 50%;
+    min-width: 140px;
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    background: #6c5ce7;
     color: white;
     border: none;
     border-radius: 8px;
-    cursor: pointer;
 }
 
-/* 3. Box Only as Wide as Its Text */
-.fit-content-box {
-    width: fit-content;   /* Keyword that forces box to match text length */
-    background-color: #a2d2ff;
-    padding: 15px 20px;
+/* 3. Fit content */
+.content-box {
+    width: fit-content;
+    padding: 12px 18px;
+    background: #dff9fb;
     border-radius: 8px;
-    color: #0b2f54;
-    font-weight: bold;
+    font-weight: 500;
 }
 
-/* 4. Width with Fixed Offset */
-.calc-box {
-    /* Uses calc() to take the full viewport width (100vw) minus 80px */
-    width: calc(100vw - 80px);
-    background-color: #ffafcc;
+/* 4. calc() */
+.dynamic-box {
+    width: calc(100vw - 100px);
     padding: 15px;
+    background: #ffeaa7;
     border-radius: 8px;
-    color: #590d22;
-    font-weight: bold;
-    box-sizing: border-box;
 }
 
-/* 5. Resizable Box */
-.clamp-box {
-    /* clamp(MIN, PREFERRED, MAX) 
-       Preferred is 50%, but it won't go below 200px or above 400px */
-    width: clamp(200px, 50%, 400px); 
-    background-color: #b9fbc0;
-    padding: 15px;
-    border-radius: 8px;
-    color: #0d4a14;
-    font-weight: bold;
+/* 5. clamp() */
+.adaptive-box {
+    width: clamp(220px, 45vw, 420px);
+    padding: 18px;
+    background: #c7ecee;
+    border-radius: 10px;
+    text-align: center;
 }

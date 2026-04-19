@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Responsive Elements Showcase</title>
+    <title>Responsive UI Playground</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>Responsive Elements Showcase</h1>
+    <h1>Responsive UI Playground</h1>
 
+    <!-- Card 1 -->
     <div class="card">
-        <div class="section-title">1. Shrinking Image</div>
-        <img src="https://via.placeholder.com/600x300" alt="Placeholder Image" class="shrinking-img">
+        <div class="section-title">Flexible Image</div>
+        <img src="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d" alt="Responsive example"
+            class="img-flex">
     </div>
 
+    <!-- Card 2 -->
     <div class="card">
-        <div class="section-title">2. Button That Never Becomes Too Small</div>
-        <button class="min-width-btn">Click Me!</button>
+        <div class="section-title">Smart Button</div>
+        <button class="btn-smart">Press Me</button>
     </div>
 
+    <!-- Card 3 -->
     <div class="card">
-        <div class="section-title">3. Box Only as Wide as Its Text</div>
-        <div class="fit-content-box">
-            This box hugs its content perfectly.
-        </div>
+        <div class="section-title">Content-Based Box</div>
+        <div class="content-box">Width adjusts to this text</div>
     </div>
 
+    <!-- Card 4 -->
     <div class="card">
-        <div class="section-title">4. Width with Fixed Offset</div>
-        <div class="calc-box">
-            Calculated Width (100vw - 80px)
-        </div>
+        <div class="section-title">Dynamic Width Box</div>
+        <div class="dynamic-box">Viewport width minus spacing</div>
     </div>
 
+    <!-- Card 5 -->
     <div class="card">
-        <div class="section-title">5. Resizable Box</div>
-        <div class="clamp-box">
-            Clamp Box (Min: 200px, Max: 400px)
-        </div>
+        <div class="section-title">Adaptive Container</div>
+        <div class="adaptive-box">Min 220px → Max 420px</div>
     </div>
 
 </body>
+
 </html>

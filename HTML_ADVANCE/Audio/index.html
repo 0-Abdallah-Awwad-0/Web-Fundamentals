@@ -1,32 +1,28 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Music Player</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Music Player</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="photo/music-solid.png" type="image/logo">
 </head>
-
 <body>
 
-    <main class="app">
-
+    <main class="container">
         <section class="panel player-panel">
-            <div class="cover">
-                <img src="photo/itunes-brands-solid.png" id="imageWidth" alt="music logo" >
-            </div>
+            <div class="cover-icon">
+                🎵 </div>
 
-            <div class="now-playing">
+            <div class="track-info">
                 <span class="label">Now Playing</span>
-                <h1 id="track-title">Evening-Improvisation</h1>
-                <p class="artist" id="track-artist">Ethera</p>
+                <h1 id="track-title">Powerful Percussion</h1>
+                <p id="track-artist">By Energysound</p>
             </div>
-
 
             <audio id="audio-player" controls>
-                <source src="Evening-Improvisation-with-Ethera(chosic.com).mp3" type="audio/mp3">
+                <source src="energysound-powerful-percussion-513717 (1).mp3" type="audio/mp3">
+                <source src="magpiemusic-action-man-the-action-sport-513684.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
             </audio>
         </section>
 
@@ -34,37 +30,21 @@
             <h2 class="playlist-title">Playlist</h2>
 
             <ul class="playlist" id="playlist">
-
-                <li class="track active"
-                    onclick="playSong('Evening-Improvisation','Ethera','Evening-Improvisation-with-Ethera(chosic.com).mp3', this)">
-                    <div class="track-text">
-                        <strong>Evening-Improvisation</strong>
-                        <span>Ethera</span>
-                    </div>
-                    <span class="duration">2:49</span>
+                <li class="track active" onclick="playSong('Powerful Percussion', 'By Energysound', 'energysound-powerful-percussion-513717 (1).mp3', this)">
+                    Track 1 — Powerful Percussion
                 </li>
 
-                <li class="track active"
-                    onclick="playSong('Investigations','Kevin MacLeod','Kevin-MacLeod-Investigations(chosic.com).mp3',this)">
-                    <div class="track-text">
-                        <strong>Investigations</strong>
-                        <span>Kevin MacLeod</span>
-                    </div>
-                    <span class="duration">1:33</span>
+                <li class="track" onclick="playSong('Action Man', 'By MagpieMusic', 'magpiemusic-action-man-the-action-sport-513684.mp3', this)">
+                    Track 2 — Action Man
                 </li>
 
-                <li class="track active"
-                    onclick="playSong('Melody','Luke Bergs','Luke-Bergs-Waesto-Melody-chosic.com_.mp3' ,this)">
-                    <div class="track-text">
-                        <strong>Melody</strong>
-                        <span>Luke Bergs</span>
-                    </div>
-                    <span class="duration">2:46</span>
+                <li class="track" onclick="playSong('Action Trailer Promo', 'By MagpieMusic', 'magpiemusic-action-trailer-promo-rock-513687.mp3', this)">
+                    Track 3 — Action Trailer Promo
                 </li>
+            </ul>
         </aside>
     </main>
+
     <script src="script.js"></script>
-
 </body>
-
 </html>

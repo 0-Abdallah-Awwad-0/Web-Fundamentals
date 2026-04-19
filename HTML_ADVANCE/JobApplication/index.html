@@ -4,91 +4,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Job Application Form</title>
+    <title>Career Application</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="form-container">
-        <h2>Job Application Form</h2>
+    <div class="application-wrapper">
+        <h2>🚀 Join Our Team</h2>
 
-        <form action="#" method="POST">
+        <form>
 
-            <div class="form-group">
-                <label for="fullName" class="required">Full Name:</label>
-                <input type="text" id="fullName" name="fullName" required>
+            <div class="input-group">
+                <label class="required">Full Name</label>
+                <input type="text" required>
             </div>
 
-            <div class="form-group">
-                <label for="emailAddress" class="required">Email Address:</label>
-                <input type="email" id="emailAddress" name="emailAddress" required>
+            <div class="input-group">
+                <label class="required">Email</label>
+                <input type="email" required>
             </div>
 
-            <div class="form-group">
-                <label for="phoneNumber" class="required">Phone Number:</label>
-                <input type="tel" id="phoneNumber" name="phoneNumber" required>
+            <div class="input-group">
+                <label class="required">Phone</label>
+                <input type="tel" required>
             </div>
 
-            <div class="form-group">
-                <label for="experience">Years of Experience:</label>
-                <input type="number" id="experience" name="experience" min="0" max="30"
-                    placeholder="Enter a number between 0 and 30"
-                    title="Please enter a valid number of years between 0 and 30.">
+            <div class="input-group">
+                <label>Experience (Years)</label>
+                <input type="number" min="0" max="25" placeholder="e.g. 3">
             </div>
 
             <fieldset>
-                <legend>Preferred Work Type</legend>
-                <div class="radio-group">
-                    <div>
-                        <input type="radio" id="remote" name="workType" value="remote" required>
-                        <label for="remote">Remote</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="onsite" name="workType" value="onsite">
-                        <label for="onsite">On-site</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="hybrid" name="workType" value="hybrid">
-                        <label for="hybrid">Hybrid</label>
-                    </div>
-                </div>
+                <legend>Work Preference</legend>
+                <label><input type="radio" name="type" required> Remote</label>
+                <label><input type="radio" name="type"> Office</label>
+                <label><input type="radio" name="type"> Hybrid</label>
             </fieldset>
 
-            <div class="form-group">
-                <label for="cvUpload" class="required">Upload CV (PDF only):</label>
-                <input type="file" id="cvUpload" name="cvUpload" accept=".pdf" required
-                    title="Please upload your resume in PDF format only.">
+            <div class="input-group">
+                <label class="required">Upload Resume (PDF)</label>
+                <input type="file" accept=".pdf" required>
             </div>
 
-            <div class="form-group">
-                <label for="appId">Application ID (auto-generated):</label>
-                <input type="text" id="appId" name="appId" value="APP-2026-00123" readonly
-                    title="This ID is automatically generated and cannot be changed.">
+            <div class="input-group">
+                <label>Application Code</label>
+                <input type="text" value="CAND-48291" readonly>
             </div>
 
-            <div class="form-group">
-                <label for="coverLetter">Cover Letter:</label>
-                <textarea id="coverLetter" name="coverLetter" rows="4"
-                    title="Briefly explain why you are a great fit for this role."></textarea>
+            <div class="input-group">
+                <label>Why should we hire you?</label>
+                <textarea rows="4"></textarea>
             </div>
 
-            <div class="form-group">
-                <label for="salary">Salary Expectation (Annually): $<span id="salaryOutput"
-                        class="salary-display">60000</span></label>
-                <input type="range" id="salary" name="salary" min="30000" max="150000" step="5000" value="60000"
-                    oninput="document.getElementById('salaryOutput').innerText = this.value" style="width: 100%;">
+            <div class="input-group">
+                <label>Expected Salary: $<span id="salaryValue">50000</span></label>
+                <input type="range" min="20000" max="120000" step="5000" value="50000"
+                    oninput="salaryValue.innerText = this.value">
             </div>
 
-            <div class="form-group">
-                <label for="startDate">Available Start Date:</label>
-                <input type="date" id="startDate" name="startDate" min="2026-04-07"
-                    title="Select a date in the future.">
+            <div class="input-group">
+                <label>Available From</label>
+                <input type="date">
             </div>
 
-            <div class="button-group">
-                <button type="submit" class="btn-submit">Submit Application</button>
-                <button type="reset" class="btn-reset">Reset Form</button>
+            <div class="actions">
+                <button type="submit" class="submit-btn">Apply Now</button>
+                <button type="reset" class="reset-btn">Clear</button>
             </div>
 
         </form>

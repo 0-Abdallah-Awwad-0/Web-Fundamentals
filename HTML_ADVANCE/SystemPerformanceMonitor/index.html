@@ -4,51 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>System Performance Monitor</title>
+    <title>Live System Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <div class="monitor-container">
-        <h1>System Performance Monitor</h1>
+    <div class="dashboard">
+        <h1>💻 Live System Dashboard</h1>
 
-        <div class="grid-layout">
+        <div class="stats-grid">
 
-            <div class="card">
-                <h3>🔥 CPU Usage</h3>
-                <meter value="0.65" min="0" max="1" low="0.3" high="0.8" optimum="0.2"></meter>
-                <span class="status-text">65% usage</span>
+            <div class="box">
+                <h3>CPU Load</h3>
+                <meter value="0.65" min="0" max="1" low="0.4" high="0.85"></meter>
+                <p>Current: 65%</p>
             </div>
 
-            <div class="card">
-                <h3>💾 RAM Usage</h3>
-                <meter value="6" min="0" max="16"></meter>
-                <span class="status-text">6 GB of 16 GB used</span>
+            <div class="box">
+                <h3>Memory Usage</h3>
+                <meter value="8" min="0" max="16"></meter>
+                <p>8GB / 16GB</p>
             </div>
 
-            <div class="card">
-                <h3>💽 Disk Usage</h3>
-                <meter value="420" min="0" max="512" high="400"></meter>
-                <span class="status-text">420 GB of 512 GB used</span>
+            <div class="box">
+                <h3>Storage Space</h3>
+                <meter value="380" min="0" max="512" high="420"></meter>
+                <p>380GB used</p>
             </div>
 
-            <div class="card">
-                <h3>📂 File Transfer</h3>
-                <progress value="70" max="100"></progress>
-                <span class="status-text">70% completed</span>
+            <div class="box">
+                <h3>Download Progress</h3>
+                <progress value="55" max="100"></progress>
+                <p>55% completed</p>
             </div>
 
-            <div class="card">
-                <h3>🌐 Network Activity</h3>
-                <progress value="30" max="100"></progress>
-                <span class="status-text">Current load: 30%</span>
+            <div class="box">
+                <h3>Internet Traffic</h3>
+                <progress value="25" max="100"></progress>
+                <p>25% load</p>
             </div>
 
-            <div class="card">
-                <h3>⚡ System Tasks</h3>
-                <progress value="45" max="100"></progress>
-                <span class="status-text">Processing tasks: 45%</span>
+            <div class="box">
+                <h3>Background Processes</h3>
+                <progress value="60" max="100"></progress>
+                <p>60% active</p>
             </div>
 
         </div>

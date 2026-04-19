@@ -1,0 +1,76 @@
+ /* General Page Styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6; /* Light gray background to match screenshot */
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        /* The White Content Card */
+        .container {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 800px;
+            padding: 40px 50px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Main Heading */
+        h1 {
+            text-align: center;
+            font-size: 24px;
+            letter-spacing: 3px;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: #333;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        /* 1. Text Transformation Classes */
+        .no-transform {
+            text-transform: none;
+            color: #555;
+        }
+
+        .capitalize {
+            text-transform: capitalize;
+            color: #0066cc; /* Blue */
+        }
+
+        .uppercase {
+            text-transform: uppercase;
+            color: #cc0000; /* Red */
+        }
+
+        .lowercase {
+            text-transform: lowercase;
+            color: #008000; /* Green */
+        }
+
+        /* 2. Text Spacing Classes */
+        .letter-spacing {
+            letter-spacing: 4px;
+        }
+
+        .word-spacing {
+            word-spacing: 15px;
+        }
+
+        .line-height {
+            line-height: 2.5; /* Increases space between lines */
+            background-color: #e5e7eb; /* Light gray box background */
+            padding: 15px;
+            border-left: 4px solid #9ca3af; /* Matches the visual detail in the image */
+            margin-top: 20px;
+        }

@@ -1,0 +1,71 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* TITLE */
+.title {
+  text-align: center;
+  margin: 30px 0;
+  font-size: 32px;
+}
+
+/* GRID */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+/* CARD */
+.card {
+  text-align: center;
+}
+
+/* IMAGE BASE */
+.card img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/* 1. CIRCLE MASK */
+.mask-circle {
+  -webkit-mask-image: radial-gradient(circle, black 60%, transparent 70%);
+  mask-image: radial-gradient(circle, black 60%, transparent 70%);
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* 2. ROUNDED RECTANGLE MASK */
+.mask-rounded {
+  -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><rect rx='30' ry='30' width='100%' height='100%' fill='black'/></svg>");
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><rect rx='30' ry='30' width='100%' height='100%' fill='black'/></svg>");
+}
+
+/* 3. FADE MASK (gradient) */
+.mask-fade {
+  -webkit-mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+/* 4. BLOBBY SVG MASK */
+.mask-blob {
+  -webkit-mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path d='M60,10 C90,20 100,60 70,90 C40,120 10,90 20,60 C30,30 30,0 60,10 Z' fill='black'/></svg>");
+  mask-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><path d='M60,10 C90,20 100,60 70,90 C40,120 10,90 20,60 C30,30 30,0 60,10 Z' fill='black'/></svg>");
+}
+
+/* TEXT */
+h3 {
+  margin-top: 10px;
+}
+
+p {
+  color: gray;
+  font-size: 14px;
+}

@@ -1,50 +1,57 @@
 body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #e9effb;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-        }
-        .monitor-container {
-            background-color: white;
-            padding: 40px;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-            width: 900px;
-        }
-        h1 {
-            text-align: center;
-            color: #2c5bc4;
-            margin-bottom: 40px;
-        }
-        .grid-layout {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-        .card {
-            background-color: #f8faff;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
-        }
-        .card h3 {
-            margin-top: 0;
-            font-size: 1.1rem;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-        .status-text {
-            display: block;
-            margin-top: 10px;
-            font-size: 0.85rem;
-            color: #666;
-        }
-        /* Styling the meters and progress bars */
-        meter, progress {
-            width: 100%;
-            height: 12px;
-        }
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background: linear-gradient(135deg, #dfe9f3, #ffffff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.dashboard {
+    width: 950px;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+h1 {
+    text-align: center;
+    color: #34495e;
+    margin-bottom: 30px;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.box {
+    background: #f4f7fb;
+    padding: 18px;
+    border-radius: 12px;
+    transition: transform 0.2s ease;
+}
+
+.box:hover {
+    transform: translateY(-3px);
+}
+
+.box h3 {
+    margin: 0 0 10px;
+    font-size: 1rem;
+    color: #2c3e50;
+}
+
+.box p {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+meter, progress {
+    width: 100%;
+    height: 10px;
+}

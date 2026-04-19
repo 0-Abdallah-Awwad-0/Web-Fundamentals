@@ -1,100 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title> Profile </title>
+    <title>Semantic Profile</title>
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <h1>Profile</h1>
+<header>
+    <nav>
+        <h1>Profile</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Connections</a></li>
+            <li><button>Logout</button></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <section>
+        
+        <article>
+            <header>
+                <img src="avatar.jpg" alt="">
+                <h2>Jane Doe</h2>
+                <p>Seattle</p>
+            </header>
+
+            <p>Developer | Engineer</p>
+
+            <footer>
+                <a href="#">Edit Profile</a>
+            </footer>
+        </article>
+
+        <article>
+            <header>
+                <h2>Education</h2>
+            </header>
+            <p>Full Stack Bootcamp</p>
+        </article>
+
+    </section>
+
+    <aside>
+
+        <section>
+            <header>
+                <h2>Connection Requests</h2>
+            </header>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">My Profile</a></li>
-                <li><a href="#">Find Connections</a></li>
-                <li><button>Sign Out</button></li>
+                <li>Todd</li>
+                <li>Phil</li>
             </ul>
-        </nav>
-    </header>
+        </section>
 
-    <main>
+        <section>
+            <header>
+                <h2>Your Connections</h2>
+            </header>
+            <ul>
+                <li>Adrien</li>
+                <li>Anne</li>
+            </ul>
 
-        <div class="left-column">
+            <footer>
+                <a href="#">View More</a>
+            </footer>
+        </section>
 
-            <section class="user-card">
-                <header>
-                    <img src="avatar.jpg" alt="Jane Doe Profile Picture">
-                </header>
-                <h1>Jane Doe</h1>
-                <h2>Seattle</h2>
-                <p>Developer | Engineer | Problem Solver</p>
-                <p>Master of shadows and the Internet!</p>
-                <a href="#">edit profile</a>
-            </section>
+    </aside>
 
-            <section class="education-card">
-                <header>
-                    <h2>Education</h2>
-                </header>
-                <h3>Coding Dojo - Full Stack Bootcamp</h3>
-                <p>Dec 2019 - Mar 2020</p>
-                <p>Triple black belt in Python, MERN, and C#...</p>
-            </section>
+</main>
 
-        </div>
-
-        <aside class="right-column">
-
-            <section class="connection-requests">
-                <header>
-                    <h2>2 Connection Requests</h2>
-                </header>
-                <ul>
-                    <li>
-                        <img src="todd.jpg" alt="Todd E">
-                        <p>Todd E</p>
-                    </li>
-                    <li>
-                        <img src="phil.jpg" alt="Phil E">
-                        <p>Phil E</p>
-                    </li>
-                </ul>
-            </section>
-
-            <section class="your-connections">
-                <header>
-                    <h2>500+ Your Connections</h2>
-                </header>
-                <ul>
-                    <li>
-                        <img src="adrien.jpg" alt="Adrien D">
-                        <p>Adrien D</p>
-                    </li>
-                    <li>
-                        <img src="anne.jpg" alt="Anne J">
-                        <p>Anne J</p>
-                    </li>
-                    <li>
-                        <img src="alayne.jpg" alt="Alayne T">
-                        <p>Alayne T</p>
-                    </li>
-                    <li>
-                        <img src="arry.jpg" alt="Arry Y">
-                        <p>Arry Y</p>
-                    </li>
-                </ul>
-                <footer>
-                    <a href="#">View More</a>
-                </footer>
-            </section>
-
-        </aside>
-
-    </main>
+<footer>
+    <p>© 2026</p>
+</footer>
 
 </body>
-
 </html>
