@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Z-Index Modal</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>My Webpage</h1>
+<p style="text-align:center;">This is a simple page with an overlay modal example.</p>
+
+<div class="about-card">
+    <h2>About</h2>
+    <p>This card represents normal page content. The modal will appear above everything using z-index.</p>
+</div>
+
+<!-- OVERLAY + MODAL -->
+<div class="overlay" id="overlay">
+    <div class="modal">
+        <div class="checkmark">✔</div>
+        <h2>Success!</h2>
+        <p>Your action was completed successfully.</p>
+        <button onclick="closeModal()">Close</button>
+    </div>
+</div>
+
+<script>
+function closeModal() {
+    document.getElementById("overlay").classList.add("hidden");
+}
+</script>
+
+</body>
+</html>
