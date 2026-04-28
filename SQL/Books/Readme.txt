@@ -1,0 +1,1 @@
+ERD diagram representing an app tracks users books and their favorite ones

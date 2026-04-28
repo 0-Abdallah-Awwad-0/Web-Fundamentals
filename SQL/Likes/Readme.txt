@@ -1,0 +1,1 @@
+ERD diagram for the post and it's relationship with the other components 
